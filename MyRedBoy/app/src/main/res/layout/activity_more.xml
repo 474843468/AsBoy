@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+             android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/activity_more"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/payCenter"
+        style="@style/moreStyle"
+        android:background="@drawable/border_background_top"
+        android:text="账户中心"/>
+
+    <TextView
+        android:id="@+id/lookLog"
+        style="@style/moreStyle"
+        android:layout_below="@+id/payCenter"
+        android:text="浏览记录"/>
+
+    <TextView
+        android:id="@+id/helpCenter"
+        style="@style/moreStyle"
+        android:layout_below="@+id/lookLog"
+        android:text="帮助中心"/>
+
+    <TextView
+        android:id="@+id/userFeedBack"
+        style="@style/moreStyle"
+        android:layout_below="@+id/helpCenter"
+        android:text="用户反馈"/>
+
+    <TextView
+        android:id="@+id/about"
+        style="@style/moreStyle"
+        android:layout_below="@+id/userFeedBack"
+        android:background="@drawable/border_background_bottom"
+        android:text="关于"/>
+
+    <Button
+    android:id="@+id/btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/about"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="25dp"
+    android:background="@drawable/button_red_title_right"
+    android:text="客服电话 400-8888-8888"
+    android:textColor="#fff"/>
+</RelativeLayout>
+
+</RelativeLayout>

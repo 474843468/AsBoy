@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_progress"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#accc"
+            android:padding="8dp"
+            android:text="孕妈专区"
+            android:textColor="#f00"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <GridView
+            android:id="@+id/gv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="8dp"
+            android:numColumns="3"
+            android:padding="5dp"
+            android:verticalSpacing="8dp">
+        </GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#accc"
+            android:padding="8dp"
+            android:text="营养食品"
+            android:textColor="#f00"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <GridView
+            android:id="@+id/gv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="8dp"
+            android:numColumns="3"
+            android:padding="5dp"
+            android:verticalSpacing="8dp">
+        </GridView>
+    </LinearLayout>
+</LinearLayout>

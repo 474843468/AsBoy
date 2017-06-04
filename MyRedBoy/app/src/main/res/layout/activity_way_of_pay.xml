@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_way_of_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/head_bg"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="支付方式"
+
+            android:textColor="@color/selector_bottom_textcolor"
+            android:textSize="24sp"/>
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="支付方式"
+        android:textColor="#000"
+        android:textSize="16sp"
+        />
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/rlCash"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/border_background_top"
+        >
+        <TextView
+            android:id="@+id/tvCash"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="到付-现金"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="13sp"
+            android:gravity="center_vertical"
+            />
+        <ImageView
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:id="@+id/ivCash"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ico_yes"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/rlLater"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/border_background_center"
+        >
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/tvLater"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="货到付款"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="13sp"
+            />
+        <ImageView
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:id="@+id/ivLater"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ico_yes"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/rlZFB"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/border_background_bottom"
+        >
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/tvZFB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="支付宝"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="13sp"
+            />
+        <ImageView
+            android:gravity="center_vertical"
+            android:id="@+id/ivZFB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ico_yes"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shopping_car_sumary_background"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:id="@+id/footCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数量总计: "
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/footCount1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1 件"
+                android:textSize="18sp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:id="@+id/oraginalPri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原始金额 :"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/oraginalPr1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="119"
+                android:textSize="18sp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:id="@+id/transpotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运费 :"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/transpotation1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1 件"
+                android:textSize="18sp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:id="@+id/YHprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="促销优惠价格 :"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/YHprice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1 件"
+                android:textSize="18sp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:id="@+id/payPri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="应支付金额 :(含运费)"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/payPri1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1 件"
+                android:textSize="18sp"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您可以享受到以下优惠:"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/etYHFoot"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_input_disable"
+            android:text="可以享受的优惠活动信息(增满 减满)"
+            android:textColor="#f00"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_shoppingcar_btn_gg"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:text="提交订单"
+        android:id="@+id/CommitList"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp"
+        />
+
+
+</LinearLayout>

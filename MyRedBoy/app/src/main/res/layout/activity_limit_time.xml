@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_limit_time"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.tmall.myredboy.activity.wyy.LimitTimeActivity">
+
+    <include layout="@layout/layout_progress"/>
+
+    <com.tmall.myredboy.widget.RefreshListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#ccc"
+        android:dividerHeight="1dp">
+
+    </com.tmall.myredboy.widget.RefreshListView>
+
+</LinearLayout>

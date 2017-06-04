@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_success"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red1"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="提交成功"
+            android:textColor="@color/selector_bottom_textcolor"
+            android:textSize="24sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的订单已提交,我们会尽快安排发货!!!"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Result"
+        android:padding="13dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_input_disable"
+        android:text="您的订单号 : 18383838438\n应付金额 : ￥123\n支付方式 :　到付－ＰＯＳ"
+        android:textColor="#000"
+        android:textSize="14sp"
+
+        />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_shoppingcar_btn_gg"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:text="继续购物"
+        android:id="@+id/GoonShpping"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_num"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:text="查看订单"
+        android:id="@+id/checkList"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:padding="13dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_input_disable"
+        android:text="如有疑问,您可以拨打客户服务电话\n1585858588"
+        android:textColor="#000"
+        android:textSize="14sp"
+
+        />
+
+</LinearLayout>

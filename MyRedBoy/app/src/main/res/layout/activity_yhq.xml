@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_yhq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/head_bg"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="优惠券"
+            android:textColor="@color/selector_bottom_textcolor"
+            android:textSize="24sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="已有优惠券"
+        android:textColor="#000"
+        android:textSize="15sp"
+        />
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/rlJY"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/border_background_top"
+        >
+        <TextView
+            android:id="@+id/tvJY"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="九月惊喜五十元礼券"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="13sp"
+            />
+        <ImageView
+            android:id="@+id/ivJY"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ico_yes"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/rlGQ"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/border_background_center"
+        >
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/tvGQ"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="国庆八十元礼券"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="13sp"
+            />
+        <ImageView
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:id="@+id/ivGQ"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ico_yes"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/rlSHENG"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/border_background_bottom"
+        >
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/tvSHENG"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="圣诞大放送八十元礼券"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="13sp"
+            />
+        <ImageView
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:id="@+id/ivSHENG"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ico_yes"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

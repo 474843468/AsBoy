@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_goods_list"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="90dp"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="#ccc"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/iv_goods_image"
+            android:layout_width="87dp"
+            android:layout_height="87dp"
+            android:layout_centerInParent="true"
+            android:background="#fff"
+            android:padding="10dp"
+            android:src="@drawable/bottom_icon_shoppingcar_selected" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/rl_content">
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            style="@style/goodsTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:text="商品名称"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_goods_des"
+            style="@style/goodsTextStyle"
+            android:layout_below="@+id/tv_goods_name"
+            android:text="附赠品"
+            android:textColor="#f00"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_goods_current_price"
+            style="@style/goodsTextStyle"
+            android:layout_below="@+id/tv_goods_des"
+            android:text="¥ 68.00"
+            android:textColor="#f00"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_goods_common"
+            style="@style/goodsTextStyle"
+            android:layout_below="@+id/fl_frame"
+            android:text="已有100人评价" />
+
+        <FrameLayout
+            android:id="@+id/fl_frame"
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_alignTop="@+id/tv_goods_current_price"
+            android:layout_toRightOf="@+id/tv_goods_common">
+
+            <TextView
+                android:id="@+id/tv_goods_old_price"
+                style="@style/goodsTextStyle"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="0dp"
+                android:text="¥ 68.00"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:background="#7000" />
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/selector_item_arrow_right_gray" />
+</RelativeLayout>

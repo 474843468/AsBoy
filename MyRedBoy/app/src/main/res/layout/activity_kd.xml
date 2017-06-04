@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_kd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/head_bg"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="快递"
+            android:textColor="@color/selector_bottom_textcolor"
+            android:textSize="22sp"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="  选择快递"
+        android:textColor="#000"
+        android:textSize="15sp"
+        />
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/rlYT"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/border_background_top"
+        >
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/tvYT"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="圆通"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="13sp"
+            />
+        <ImageView
+            android:gravity="center_vertical"
+            android:id="@+id/ivYT"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ico_yes"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/rlYD"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/border_background_center"
+        >
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/tvYD"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="韵达"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="13sp"
+            />
+        <ImageView
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:id="@+id/ivYD"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ico_yes"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/rlST"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/border_background_bottom"
+        >
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/tvST"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="申通"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="13sp"
+            />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ivST"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ico_yes"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

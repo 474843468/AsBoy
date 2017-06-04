@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_help_center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/layout_more_titlebar"/>
+    <!--<RelativeLayout
+        android:id="@+id/activity_more"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_help"
+        style="@style/moreStyle"
+        android:background="@drawable/input_num"
+        android:text="新手指南"/>
+        <TextView
+            android:layout_below="@+id/tv_help"
+            android:id="@+id/tv_afterService"
+            style="@style/moreStyle"
+            android:background="@drawable/input_num"
+            android:text="售后服务"/>
+        <TextView
+            android:layout_below="@+id/tv_afterService"
+            android:id="@+id/tv_send"
+            style="@style/moreStyle"
+            android:background="@drawable/input_num"
+            android:text="配送服务"/>
+   </RelativeLayout>-->
+    <ListView
+        android:id="@+id/llist"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"></ListView>
+    <Button
+        android:id="@+id/btn_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_red_title_right"
+        android:layout_marginBottom="180dp"
+        android:text="客服电话 400-8888-8888"
+        android:textColor="#fff"/>
+
+</LinearLayout>

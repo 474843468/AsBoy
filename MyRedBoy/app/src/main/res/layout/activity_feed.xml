@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_feed"
+    android:layout_width="match_parent"
+    android:background="@drawable/select_good_bg"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_more_titlebar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="感谢您为我们提出的宝贵建议,期待我们会用心做的更好!"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/iv_arrow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"/>
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/commodity_hua_validate_lable_two"
+        android:layout_marginTop="67dp"
+        android:layout_below="@+id/include"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"/>
+
+
+</RelativeLayout>

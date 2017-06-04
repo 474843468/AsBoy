@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+
+    android:layout_height="20dp">
+
+
+        <TextView
+            android:id="@+id/tv_market_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#b000"
+            android:textStyle="bold"
+            android:text="¥299.00" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="#7000" />
+
+</FrameLayout>

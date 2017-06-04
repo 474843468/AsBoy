@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/ll_loading"
+        layout="@layout/layout_loading" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_goods_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/rb_scale"
+                    style="@style/goodsBtnStyle"
+                    android:background="@drawable/selector_goods_btn_left"
+                    android:paddingRight="10dp"
+                    android:text="销量" />
+
+                <RadioButton
+                    android:id="@+id/rb_price"
+                    style="@style/goodsBtnStyle"
+                    android:background="@drawable/selector_goods_btn_center"
+                    android:drawableRight="@drawable/filter_arrow_up"
+                    android:paddingRight="10dp"
+                    android:text="价格" />
+
+                <RadioButton
+                    android:id="@+id/rb_common"
+                    style="@style/goodsBtnStyle"
+                    android:background="@drawable/selector_goods_btn_center"
+                    android:paddingRight="10dp"
+                    android:text="好评度" />
+
+                <RadioButton
+                    android:id="@+id/rb_show_data"
+                    style="@style/goodsBtnStyle"
+                    android:background="@drawable/selector_goods_btn_right"
+                    android:paddingRight="10dp"
+                    android:text="上架时间" />
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/search_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rg"
+                android:src="@drawable/search_empty" />
+
+            <com.tmall.myredboy.widget.RefreshListView
+                android:id="@+id/lv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rg"
+                android:divider="#cccc"
+                android:dividerHeight="1dp"></com.tmall.myredboy.widget.RefreshListView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>

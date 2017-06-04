@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/select_good_bg">
+    <include layout="@layout/layout_more_titlebar"/>
+
+    <ImageView
+        android:id="@+id/iv_loge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/about_logo"
+        android:background="@null"/>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新版本 2.0"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:layout_below="@+id/iv_loge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:text="西安传智播客互联网有限公司"
+        android:layout_below="@+id/tv_version"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
+
+
+

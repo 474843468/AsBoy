@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您可以享受到以下优惠:"
+            android:textColor="#000"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/etYH"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_input_disable"
+            android:text="可以享受的优惠活动信息(满增 满减)"
+            android:textColor="#f00"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

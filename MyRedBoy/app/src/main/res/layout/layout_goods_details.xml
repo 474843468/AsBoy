@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_goods_detail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+
+    <TextView
+
+        android:id="@+id/tv_goods_detail_name"
+        style="@style/goodsTextStyle"
+        android:text="商品详情名称" />
+
+
+    <Button
+        android:id="@+id/btn_shared"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_btn_bg_shared"
+        android:text="分享"
+        android:textColor="#00a4df"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_goods_detail_normal_price"
+        style="@style/goodsTextStyle"
+        android:layout_below="@id/tv_goods_detail_name"
+        android:text="市场价:" />
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_goods_detail_name"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_goods_detail_normal_price">
+
+        <include layout="@layout/layout_goods_old_price"
+            android:layout_width="50dp"
+            android:id="@+id/fl"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tv_goods_detail_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_goods_detail_normal_price"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_goods_grade"
+        style="@style/goodsTextStyle"
+        android:layout_below="@+id/tv_goods_detail_name"
+        android:layout_marginLeft="90dp"
+        android:layout_toRightOf="@+id/fl"
+        android:text="商品评分:" />
+
+    <TextView
+        android:id="@+id/tv_goods_member_price"
+        style="@style/goodsTextStyle"
+        android:layout_below="@+id/tv_goods_detail_normal_price"
+        android:text="会员价:" />
+
+    <TextView
+        android:id="@+id/tv_member_price"
+        style="@style/goodsTextStyle"
+        android:layout_alignLeft="@+id/fl"
+        android:layout_below="@+id/tv_goods_detail_normal_price"
+        android:layout_toRightOf="@+id/tv_goods_member_price"
+        android:text=" ¥299.00"
+        android:textColor="#f00" />
+
+    <LinearLayout
+        android:id="@+id/ll_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_goods_member_price"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_goods_color"
+            style="@style/goodsTextStyle"
+            android:text="颜    色:" />
+
+        <Spinner
+            android:id="@+id/sp_goods_color"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/fl"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/selector_goods_details_spinner_bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_goods_grade"
+        android:layout_alignTop="@+id/ll_color"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_goods_size"
+            style="@style/goodsTextStyle"
+            android:text="尺   码:" />
+
+        <Spinner
+            android:id="@+id/sp_goods_size"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/selector_goods_details_spinner_bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_color"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_goods_count"
+            style="@style/goodsTextStyle"
+            android:text="数    量:" />
+
+        <EditText
+            android:id="@+id/et_count"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/input_num"
+            android:inputType="number"
+            android:text="1"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/selector_item_arrow_right_gray" />
+
+    <RatingBar
+        android:id="@+id/rbProductRating"
+        style="@style/goodsRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignTop="@+id/tv_goods_grade"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/tv_goods_grade"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="1.0" />
+
+</RelativeLayout>

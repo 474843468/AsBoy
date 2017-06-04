@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/layout_progress"/>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rb_sale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_search_left"
+            android:button="@null"
+            android:gravity="center"
+            android:text="销量"
+            android:textColor="@color/selector_search_result_textcolor"
+            android:textSize="16sp"/>
+
+
+        <RadioButton
+            android:id="@+id/rb_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_search_center"
+            android:button="@null"
+            android:drawableRight="@drawable/filter_arrow_up"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="价格"
+            android:textColor="@color/selector_search_result_textcolor"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_praise"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_search_center"
+            android:button="@null"
+            android:gravity="center"
+            android:text="好评"
+            android:textColor="@color/selector_search_result_textcolor"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_search_right"
+            android:button="@null"
+            android:gravity="center"
+            android:text="上架时间"
+            android:textColor="@color/selector_search_result_textcolor"
+            android:textSize="16sp"/>
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rg">
+
+        <LinearLayout
+            android:id="@+id/ll_search_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search_empty"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="抱歉,查无此商品!"
+                android:textColor="#ccc"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <com.tmall.myredboy.widget.RefreshListView
+            android:id="@+id/lv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#ccc"
+            android:dividerHeight="1dp">
+        </com.tmall.myredboy.widget.RefreshListView>
+    </FrameLayout>
+
+
+</RelativeLayout>
